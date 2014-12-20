@@ -1,0 +1,16 @@
+name: gentoo-crossdev
+version: 20141030.0.0
+inherits: attilaolah/gentoo@20141204.1.0
+type: main
+platform: ubuntu@12.04
+description: Wercker box that contains a Gentoo chroot with crossdev installed
+keywords:
+  - gentoo
+  - crossdev
+packages:
+  - crossdev@20141030
+script: |
+  version="20141030"
+  root="/gentoo"
+
+  sudo chroot ${root} emerge -q "=sys-devel/crossdev-${version}"
