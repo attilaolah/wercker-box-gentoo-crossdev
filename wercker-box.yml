@@ -1,6 +1,6 @@
 name: gentoo-crossdev
-version: 20141030.0.0
-inherits: attilaolah/gentoo@20141204.1.0
+version: 20141030.1.0
+inherits: attilaolah/gentoo@20141204.2.4
 type: main
 platform: ubuntu@12.04
 description: Wercker box that contains a Gentoo chroot with crossdev installed
